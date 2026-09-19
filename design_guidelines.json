@@ -1,0 +1,135 @@
+{
+  "project_name": "Javsh Ai Agent",
+  "tagline": "Give the agent a goal, not a list of clicks.",
+  "dedication": "Dedicated to 90's Moms and the young generation.",
+  "design_archetype": "High-Trust Command Center (Hybrid SaaS Workspace + Tactile Human Warmth)",
+  "context_type": "hybrid_fullstack (Agentic AI SaaS app / Three-pane workspace dashboard)",
+  "theme": {
+    "default": "dark",
+    "toggle_available": true,
+    "dark_palette": {
+      "background_page": "#0B0F19",
+      "background_card": "#111827",
+      "background_elevated": "#1F2937",
+      "border_subtle": "#1F2937",
+      "border_highlight": "#374151",
+      "text_primary": "#F9FAFB",
+      "text_secondary": "#9CA3AF",
+      "text_muted": "#6B7280",
+      "brand_primary": "#3B82F6",
+      "brand_primary_hover": "#2563EB",
+      "accent_emerald": "#10B981",
+      "accent_amber": "#F59E0B",
+      "accent_rose": "#EF4444",
+      "accent_purple": "#8B5CF6",
+      "accent_cyan": "#06B6D4"
+    },
+    "light_palette": {
+      "background_page": "#F8FAFC",
+      "background_card": "#FFFFFF",
+      "background_elevated": "#F1F5F9",
+      "border_subtle": "#E2E8F0",
+      "border_highlight": "#CBD5E1",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#64748B",
+      "brand_primary": "#2563EB",
+      "brand_primary_hover": "#1D4ED8",
+      "accent_emerald": "#059669",
+      "accent_amber": "#D97706",
+      "accent_rose": "#DC2626",
+      "accent_purple": "#7C3AED",
+      "accent_cyan": "#0891B2"
+    }
+  },
+  "typography": {
+    "font_family_heading": "'Outfit', 'Cabinet Grotesk', -apple-system, sans-serif",
+    "font_family_body": "'Inter', 'DM Sans', system-ui, sans-serif",
+    "font_family_mono": "'JetBrains Mono', 'Fira Code', monospace",
+    "hierarchy": {
+      "h1_app_title": "text-2xl font-bold tracking-tight",
+      "h2_section_header": "text-xl font-semibold tracking-tight",
+      "h3_card_header": "text-base font-medium",
+      "body_standard": "text-sm font-normal leading-relaxed",
+      "caption_mono": "text-xs font-mono tracking-wide uppercase",
+      "tool_log": "text-xs font-mono leading-tight"
+    }
+  },
+  "layout_architecture": {
+    "mode": "Three-Pane Master Dashboard (LEFT - CENTER - RIGHT)",
+    "container": "h-screen w-screen flex flex-col overflow-hidden bg-background text-foreground",
+    "top_navbar": "h-14 border-b border-border/80 px-4 flex items-center justify-between bg-card/60 backdrop-blur-xl z-30 shrink-0",
+    "main_workspace": "flex-1 flex overflow-hidden relative",
+    "left_pane": {
+      "name": "Agent Chat & Command Console",
+      "width": "w-full lg:w-[380px] xl:w-[420px]",
+      "border": "border-r border-border/70",
+      "role": "Natural language prompt input, model selector (Claude Sonnet 4.6 / Gemini 3.1 Pro), file attachments, start/stop agent, reasoning summary stream, tool cards, file artifact downloads."
+    },
+    "center_pane": {
+      "name": "Live Computer & Screen Preview",
+      "width": "flex-1",
+      "role": "Real-time browser screenshot view, interactive viewport overlay, action bounding boxes, DOM highlighter, URL bar display, view tab switcher (Screen / Terminal Log / DOM Inspector / Canvas)."
+    },
+    "right_pane": {
+      "name": "Task Execution & Safety Control Panel",
+      "width": "w-full lg:w-[360px] xl:w-[400px]",
+      "border": "border-l border-border/70",
+      "role": "Current micro-action status, progress bar, tool checklist execution tree, Human Approval Dialog (Allow Once / Allow Always / Reject), task timeline, history log, audit trail."
+    }
+  },
+  "key_features_and_components": {
+    "model_brain_selector": {
+      "options": ["Claude Sonnet 4.6 (Default)", "Gemini 3.1 Pro"],
+      "component": "Shadcn Select or Custom Toggle Pills with model badge badges"
+    },
+    "agent_loop_visualization": {
+      "stages": ["OBSERVE", "THINK/PLAN", "ACT", "VERIFY", "CONTINUE/RECOVER", "COMPLETE"],
+      "component": "Interactive horizontal/vertical step indicator with glowing status pulses (emerald = active, amber = waiting approval, blue = thinking)"
+    },
+    "human_approval_system": {
+      "type": "Risky Action Interceptor",
+      "triggers": ["File Deletion", "Payment Submission", "System Terminal Command", "External API Call"],
+      "actions": ["Allow Once", "Allow Always", "Reject & Pivot"],
+      "styling": "High-contrast modal/card banner with amber warning glow and clear test-ids"
+    },
+    "file_artifact_cards": {
+      "supported": ["Excel (.xlsx)", "PDF Document", "Word Doc (.docx)", "Python Code Script", "CSV Data"],
+      "features": ["Quick Preview", "Download File", "Copy Code", "Open in Center Canvas"]
+    },
+    "live_screen_preview": {
+      "features": ["Simulated live screenshot stream", "Interactive click/hover overlay box", "Mouse cursor path trace", "Zoom in / out", "Fullscreen mode", "URL address bar"]
+    },
+    "authentication_system": {
+      "modal_or_page": "Email + Password login modal with account switcher (Mom Mode / Power User / Developer mode)"
+    }
+  },
+  "image_urls": {
+    "hero_laptop_dashboard": "https://images.unsplash.com/photo-1771923082503-0a3381c46cef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxhaSUyMGNvbXB1dGVyJTIwYWdlbnQlMjBkYXNoYm9hcmQlMjBpbnRlcmZhY2UlMjBzY3JlZW5zaG90c3xlbnwwfHx8fDE3ODk4NTQ4NjZ8MA&ixlib=rb-4.1.0&q=85",
+    "deepseek_interface": "https://images.pexels.com/photos/30530420/pexels-photo-30530420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "analytics_screen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxhaSUyMGNvbXB1dGVyJTIwYWdlbnQlMjBkYXNoYm9hcmQlMjBpbnRlcmZhY2UlMjBzY3JlZW5zaG90c3xlbnwwfHx8fDE3ODk4NTQ4NjZ8MA&ixlib=rb-4.1.0&q=85",
+    "user_mom_avatar": "https://images.unsplash.com/photo-1543269664-02e941c052f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwbW9tJTIwcG9ydHJhaXQlMjBmcmllbmRseSUyMHRlY2glMjB1c2VyfGVufDB8fHx8MTc4OTg1NDg3M3ww&ixlib=rb-4.1.0&q=85",
+    "young_gen_user": "https://images.unsplash.com/photo-1559579166-6f75c57d2f85?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxzbWlsaW5nJTIwbW9tJTIwcG9ydHJhaXQlMjBmcmllbmRseSUyMHRlY2glMjB1c2VyfGVufDB8fHx8MTc4OTg1NDg3M3ww&ixlib=rb-4.1.0&q=85"
+  },
+  "micro_interactions": {
+    "agent_pulse": "animate-pulse on active agent thinking dots",
+    "streaming_text": "Smooth character typing effect or fade-in text blocks",
+    "live_indicator": "Glowing emerald dot with ping animation for live screen view",
+    "approval_dialog": "Framer motion scale-up spring animation with backdrop blur",
+    "progress_bar": "Smooth transition-all duration-500 gradient fill"
+  },
+  "testing_and_accessibility": {
+    "data_testid_convention": "All interactive elements, buttons, inputs, tabs, state badges MUST contain data-testid in kebab-case format (e.g. data-testid='prompt-input', data-testid='start-agent-button', data-testid='allow-once-button').",
+    "contrast_standards": "WCAG AA / APCA compliant high-contrast text against dark slate and soft gray backgrounds.",
+    "reduced_motion": "Respect prefers-reduced-motion CSS query."
+  },
+  "instructions_to_main_agent": [
+    "1. Keep code modular: create individual pane components (LeftChatPane.js, CenterPreviewPane.js, RightTaskPane.js) under src/components/.",
+    "2. Ensure all files use .js / .jsx extensions (NOT .tsx).",
+    "3. Support seamless Light and Dark mode toggling with smooth transition.",
+    "4. Ensure realistic simulated streaming of agent responses, browser screenshots, and tool execution logs.",
+    "5. Highlight the dedication prominently in footer/about modal: 'Dedicated to 90's Moms and the young generation.'",
+    "6. Include model selection between Claude Sonnet 4.6 and Gemini 3.1 Pro.",
+    "7. Include all specified data-testid attributes on buttons, inputs, tabs, and status cards."
+  ]
+}
