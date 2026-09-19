@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { tasks as tasksApi } from "@/lib/apiClient";
 import { CheckCircle2, Loader2, XCircle, Square, Clock } from "lucide-react";
 
@@ -24,6 +24,7 @@ export default function HistorySheet({ open, onOpenChange, onSelect, refreshKey 
       <SheetContent side="left" className="w-[340px] sm:w-[380px] p-0">
         <SheetHeader className="px-4 py-3 border-b border-border">
           <SheetTitle className="font-heading">Task History</SheetTitle>
+          <SheetDescription className="sr-only">List of your previous agent tasks</SheetDescription>
         </SheetHeader>
         <div className="overflow-y-auto scrollbar-thin p-3 space-y-2 h-[calc(100vh-60px)]">
           {items.length === 0 && <div className="text-sm text-muted-foreground text-center py-8">No tasks yet.</div>}

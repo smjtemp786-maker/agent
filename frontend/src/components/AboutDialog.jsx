@@ -1,5 +1,5 @@
 import React from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Bot, Heart, ShieldCheck, Globe, FileSpreadsheet, Terminal } from "lucide-react";
 
 const RISK_TABLE = [
@@ -22,6 +22,7 @@ export default function AboutDialog({ open, onOpenChange }) {
             </div>
             Javsh AI Agent
           </DialogTitle>
+          <DialogDescription className="sr-only">About Javsh AI Agent and its permission policy</DialogDescription>
         </DialogHeader>
         <div className="space-y-4">
           <p className="text-sm text-muted-foreground">

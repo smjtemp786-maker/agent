@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { api } from "@/lib/apiClient";
@@ -29,6 +29,7 @@ export default function SettingsDialog({ open, onOpenChange }) {
       <DialogContent className="max-w-md">
         <DialogHeader>
           <DialogTitle className="font-heading">Settings & Permissions</DialogTitle>
+          <DialogDescription className="sr-only">Configure default model and approval permissions</DialogDescription>
         </DialogHeader>
         <div className="space-y-5">
           <div>
